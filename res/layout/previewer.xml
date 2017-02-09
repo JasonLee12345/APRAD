@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previewer:" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00BFFF"
+        android:background="#00000000" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  ________________________________________"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00BFFF"
+        android:background="#00000000" />
+    
+    
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#00000000" >
+            
+            <TextView
+        		android:id="@+id/textView3"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="   "
+        		android:textSize="12sp"
+        		android:textColor="#00BFFF"
+        		android:background="#00000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+        @author:         Nathan Vanderau
+        @created:        21 Nov 2014
+        @Modified By:	 	Kun Li
+        @Modified Date:		26 Feb 2015
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" 
+              android:background="@drawable/galaxy4_1">
+              
+    <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="290sp"
+        android:layout_weight="0.3" />
+
+<Button
+    android:id="@+id/synthesizeWaveDataButton"
+    style="@style/button_text"
+    android:layout_width="match_parent"
+    android:layout_height="12sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:background="@drawable/grey_button"
+    android:text="@string/synthesize_data" />
+
+<Button
+    android:id="@+id/useSavedDataButton"
+    style="@style/button_text"
+    android:layout_width="match_parent"
+    android:layout_height="12sp"
+    android:layout_weight="1"
+    android:background="@drawable/grey_button"
+    android:text="@string/use_saved" />
+
+<Button
+    android:id="@+id/helpButton"
+    style="@style/button_text"
+    android:layout_width="match_parent"
+    android:layout_height="12sp"
+    android:layout_weight="1"
+    android:background="@drawable/grey_button"
+    android:text="@string/help" />
+
+</LinearLayout>

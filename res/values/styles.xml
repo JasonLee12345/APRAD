@@ -1,0 +1,64 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="button_text" >
+	    <item name="android:layout_width" >match_parent</item>
+	    <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:textColor" >#FFFFFF</item>
+	    <item name="android:gravity" >center</item>
+	    <item name="android:layout_margin" >1sp</item>
+	    <item name="android:includeFontPadding">false</item>
+	    <item name="android:paddingTop">0sp</item>
+	    <item name="android:paddingBottom">0sp</item>
+	    <item name="android:textSize" >27sp</item>
+	    <item name="android:textStyle" >italic</item>
+	    <item name="android:shadowColor" >#000000</item>
+	    <item name="android:shadowDx" >3</item>
+	    <item name="android:shadowDy" >3</item>
+	    <item name="android:shadowRadius" >2</item>
+	 </style>
+	  
+    
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item> 
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item> 
+        <item name="android:windowIsTranslucent">false</item> 
+        <item name="android:background">@drawable/rounded_corners</item>
+        <item name="android:windowBackground">@color/my_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>  
+    
+    
+    <style name="little_button_text_style" >
+	    <item name="android:layout_width" >match_parent</item>
+	    <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:textColor" >#FFFFFF</item>
+	    <item name="android:gravity" >center</item>
+	    <item name="android:layout_margin" >2sp</item>
+	    <item name="android:includeFontPadding">false</item>
+	    <item name="android:paddingTop">0sp</item>
+	    <item name="android:paddingBottom">0sp</item>
+	    <item name="android:textSize" >24sp</item>
+	    <item name="android:textStyle" >italic</item>
+	    <item name="android:shadowColor" >#000000</item>
+	 </style>
+
+</resources>

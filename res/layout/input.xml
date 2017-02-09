@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy3_3"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/id_input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="Synthesize Wave"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/newtextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Y(t) = Func1 + Func2 + Func3 + ..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffB7B7FF" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="   Function = ACos(2πft) or ASin(2πft)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffB7B7FF" />
+
+<ScrollView
+    android:id="@+id/signals_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:layout_weight="8" >
+    
+    <LinearLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+    <LinearLayout
+        android:id="@+id/firstSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstTimeVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function1:"
+            android:textColor="#ffffff"
+            android:textOff="Cos"  
+        	android:textOn="Sin" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/firstTimeVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ampl_cos_1"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="  "
+            android:textAlignment="center"
+            android:textColor="#ffFFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/firstFreqVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/freq_cos_1"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/hertz"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+	<TextView
+	    android:id="@+id/id_space1"
+	    android:layout_width="match_parent"
+	    android:layout_height="15dp"
+	    android:text="   "
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textColor="#ffB7B7FF" />
+
+    <LinearLayout
+        android:id="@+id/secondSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstTimeVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function2:"
+            android:textColor="#ffffff"
+            android:textOff="Cos"  
+        	android:textOn="Sin" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/secondTimeVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondFreqVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ampl_sin_2"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="  "
+            android:textAlignment="center"
+            android:textColor="#ffFFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/secondFreqVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstSpace"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/freq_sin_2"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/hertz"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+ 
+    <TextView
+        android:id="@+id/id_space2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:text="   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffB7B7FF" />
+    
+    
+    
+    
+   
+    
+    <LinearLayout
+        android:id="@+id/thirdSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstTimeVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function3:"
+            android:textColor="#ffffff"
+            android:textOff="Cos"  
+        	android:textOn="Sin" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/thirdTimeVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstFreqVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/a_third"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="  "
+            android:textAlignment="center"
+            android:textColor="#ffFFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdFreqVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f_third"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/hertz"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/id_space3"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:text="   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffB7B7FF" />
+    
+    
+    
+    
+   
+    
+    <LinearLayout
+        android:id="@+id/fourthSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstTimeVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function4:"
+            android:textColor="#ffffff"
+            android:textOff="Cos"  
+        	android:textOn="Sin" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/fourthTimeVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstFreqVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/a_fourth"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="  "
+            android:textAlignment="center"
+            android:textColor="#ffFFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthFreqVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f_fourth"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/hertz"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/id_space4"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:text="   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffB7B7FF" />
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/fifthSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstTimeVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function5:"
+            android:textColor="#ffffff"
+            android:textOff="Cos"  
+        	android:textOn="Sin" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/fifthTimeVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstFreqVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/a_fifth"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="  "
+            android:textAlignment="center"
+            android:textColor="#ffFFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifthFreqVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f_fifth"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/hertz"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+    
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/id_space5"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:text="   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffB7B7FF" />
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/sixthSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstTimeVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function6:"
+            android:textColor="#ffffff"
+            android:textOff="Cos"  
+        	android:textOn="Sin" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/sixthTimeVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstFreqVariable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/a_sixth"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="  "
+            android:textAlignment="center"
+            android:textColor="#ffFFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixthFreqVariable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f:"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f_sixth"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#ffFFFFFF" >
+        </EditText>
+
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/hertz"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+    
+    
+  </LinearLayout>
+</ScrollView>
+
+
+		<View
+		  android:layout_width="1dp"
+		  android:layout_height="15dp"
+		  android:layout_weight="1">
+		</View>
+
+
+<LinearLayout
+    android:id="@+id/button_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/goButton"
+            style="@style/button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_button"
+            android:text="Time Domain" />
+        
+        <Button
+            android:id="@+id/goButton1"
+            style="@style/button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_button"
+            android:text="Frequency Domain" />
+        
+        <Button
+            android:id="@+id/goButton2"
+            style="@style/button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_button"
+            android:text="Spectrogram" />
+</LinearLayout>
+
+</LinearLayout>

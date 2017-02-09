@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sea1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/content_margin"
+        android:contentDescription="@string/about"
+        android:enabled="false"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:text="@string/about"
+        android:textSize="23sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    	<View
+		  android:layout_width="1dp"
+		  android:layout_height="15dp"
+		  android:layout_weight="0">
+		</View>
+    
+    <ScrollView
+     	android:id="@+id/scrollViewer"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:fillViewport="true"
+     	android:scrollbars="vertical" >
+
+    	<TextView
+        	android:id="@+id/aboutContent"
+        	android:layout_width="match_parent"
+        	android:layout_height="0sp"
+        	android:layout_margin="@dimen/content_margin"
+        	android:text="@string/about_content"
+        	android:textColor="#FFFFFF"
+        	android:textSize="20sp" />
+    
+    </ScrollView>
+
+</LinearLayout>

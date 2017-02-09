@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy1_1"
+    android:orientation="vertical" 
+    android:id="@+id/id_mySlideView1" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="@string/preferences"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/id_spec_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Spectrogram Setting"
+        android:textColor="#F0B7B7FF" />
+    
+    <View
+		android:layout_width="1dp"
+		android:layout_height="10dp">
+	</View>
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interval"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:id="@+id/liveRenderSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7DB7B7FF"
+        android:entries="@array/interval_options"
+        android:popupBackground="#D7FFFFFF"
+        android:prompt="@string/interval"
+        android:text="@string/interval"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viewType"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:id="@+id/displayScalingSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7DB7B7FF"
+        android:entries="@array/display_scaling_options"
+        android:popupBackground="#D7FFFFFF"
+        android:prompt="@string/interval"
+        android:text="@string/interval"
+        android:textColor="#ffffff" />
+    
+		<View
+		  android:layout_width="1dp"
+		  android:layout_height="0dp"
+		  android:layout_weight="1">
+		</View>
+		
+		<TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Scale"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+		<SeekBar
+		    android:id="@+id/seekBar1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" />
+		
+		<View
+		  android:layout_width="1dp"
+		  android:layout_height="0dp"
+		  android:layout_weight="1">
+		</View>
+
+		<Button
+		    android:id="@+id/savePreferencesSpectrogramButton"
+		    style="@style/button_text"
+		    android:layout_width="match_parent"
+		    android:layout_height="80dp"
+		    android:background="@drawable/grey_button"
+		    android:text="@string/save" />
+
+		
+
+</LinearLayout>

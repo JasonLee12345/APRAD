@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/galaxy1_1"
+    android:orientation="vertical" 
+    android:id="@+id/id_mySlideView" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="@string/preferences"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/id_global_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Global Setting"
+        android:textColor="#F0B7B7FF" />
+    
+    <View
+		android:layout_width="1dp"
+		android:layout_height="10dp">
+	</View>
+		
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frequency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:id="@+id/frequencySpinner"
+        style="@style/AppBaseTheme"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7DB7B7FF"
+        android:entries="@array/frequency_options"
+        android:popupBackground="#D7FFFFFF"
+        android:prompt="@string/frequency"
+        android:text="@string/frequency"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+    <View
+		android:layout_width="1dp"
+		android:layout_height="10dp"
+		android:layout_weight="9">
+	</View>
+        
+    <Button
+        android:id="@+id/instructionPreferencesButton"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/grey_button"
+        android:text="Instructions" />
+	
+    <Button
+        android:id="@+id/savePreferencesButton"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/grey_button"
+        android:text="@string/save" />
+
+    </LinearLayout>
+	
+    
+</LinearLayout>

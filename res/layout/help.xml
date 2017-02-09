@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sea2">
+    
+ <TextView
+     android:id="@+id/helpTitle"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="125sp"
+     android:layout_marginRight="125sp"
+     android:layout_marginTop="@dimen/content_margin"
+     android:contentDescription="@string/help"
+     android:enabled="false"
+     android:gravity="center"
+     android:scrollHorizontally="false"
+     android:text="@string/help"
+     android:textSize="23sp"
+     android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+ <ViewFlipper
+     android:id="@+id/viewFlipper1"
+     android:layout_width="295dp"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:layout_marginBottom="1sp"
+     android:layout_marginLeft="3sp"
+     android:layout_marginRight="3sp"
+     android:layout_marginTop="5sp"
+     android:flipInterval="4000" >
+        
+            <ImageView
+                android:id="@+id/flipper_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/screenshot_3" />
+
+            <ImageView
+                android:id="@+id/flipper_image2"
+                android:contentDescription="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/screenshot_1" />
+            
+            <ImageView
+                android:id="@+id/flipper_image3"
+                android:contentDescription="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/screenshot_2" />
+            
+    </ViewFlipper>
+
+ 	<ScrollView
+     	android:id="@+id/scrollViewer"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:fillViewport="true"
+     	android:scrollbars="vertical" >
+     
+     		<TextView
+         		android:id="@+id/helpContent"
+         		android:layout_width="wrap_content"
+         		android:layout_height="wrap_content"
+         		android:layout_marginBottom="43dip"
+         		android:text="@string/help_content"
+         		android:textColor="#ffffff"
+         		android:textSize="18sp"
+         		android:textStyle="italic" />
+ 	</ScrollView>
+
+</LinearLayout>

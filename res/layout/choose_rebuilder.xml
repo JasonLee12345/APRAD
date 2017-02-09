@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000" >
+    
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selector:" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00BFFF"
+        android:background="#00000000" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  ________________________________________"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00BFFF"
+        android:background="#00000000" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to use the data?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00BFFF"
+        android:background="#00000000" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00BFFF"
+        android:background="#00000000" />
+
+
+        <Button
+            android:id="@+id/id_td_button"
+            style="@style/little_button_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_button"
+            android:text="Time Domain" />
+
+        <Button
+            android:id="@+id/id_fd_button"
+            style="@style/little_button_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_button"
+            android:text="Frequency Domain" />
+            
+            <Button
+            android:id="@+id/id_s_button"
+            style="@style/little_button_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_button"
+            android:text="Spectrogram" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/galaxy4_1" >
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="match_parent"
+        android:layout_height="212dp" />
+    
+    <Button
+        android:id="@+id/timeDomainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/time_domain"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+
+    <Button
+        android:id="@+id/spectrumAnalyzerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/spectrum_analyzer"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+
+    <Button
+        android:id="@+id/spectrogramButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/spectrogram"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+
+    <Button
+        android:id="@+id/configurationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Preferences"
+		android:background="@drawable/grey_button"
+        style="@style/button_text" />
+    
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/help"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+
+</LinearLayout>

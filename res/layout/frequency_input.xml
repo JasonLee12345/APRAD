@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- This ^^ was giving me many issues with not allowing me to have
+        the following RelativeLayout completely fill the parent. It would
+        only go about 3/4 of the way down the screen.
+        I had to add teh android:fillViewport=true to ScrollView to allow
+        the RelativeView to fill the screen. It's all good in the hood now.
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/zeroSpace"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/equation"/>
+            </LinearLayout>
+
+
+
+            <!--Amplitude Cosine 1 -->>
+            <LinearLayout
+                android:id="@+id/ampCos1Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/zeroSpace">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_cos_1"/>
+                <EditText
+                    android:id="@+id/amp_cos_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <!-- Frequency Cosine 1 -->
+            <LinearLayout
+                android:id="@+id/frequencyCos1Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ampCos1Variable">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/frequency_cos_1"/>
+                <EditText
+                    android:id="@+id/freq_cos_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+               <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <!-- Amplitude Sine 1 -->
+            <LinearLayout
+                android:id="@+id/ampSin1Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/frequencyCos1Variable">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_sin_1"/>
+                <EditText
+                    android:id="@+id/amp_sin_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+
+            <!-- Frequency Sine 1 -->
+            <LinearLayout
+                android:id="@+id/freqSin1Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ampSin1Variable">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_sin_1"/>
+                <EditText
+                    android:id="@+id/freq_sin_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/firstSpace"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/freqSin1Variable">
+            </LinearLayout>
+
+
+
+
+
+            <!--Amplitude Cosine 2 -->>
+            <LinearLayout
+                android:id="@+id/ampCos2Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/firstSpace">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_cos_2"/>
+                <EditText
+                    android:id="@+id/amp_cos_2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <!-- Frequency Cosine 2 -->
+            <LinearLayout
+                android:id="@+id/frequencyCos2Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ampCos2Variable">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/frequency_cos_2"/>
+                <EditText
+                    android:id="@+id/freq_cos_2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <!-- Amplitude Sine 2 -->
+            <LinearLayout
+                android:id="@+id/ampSin2Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/frequencyCos2Variable">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_sin_2"/>
+                <EditText
+                    android:id="@+id/amp_sin_2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+
+            <!-- Frequency Sine 2 -->
+            <LinearLayout
+                android:id="@+id/freqSin2Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ampSin2Variable">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_sin_2"/>
+                <EditText
+                    android:id="@+id/freq_sin_2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/secondSpace"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/freqSin2Variable">
+            </LinearLayout>
+
+
+
+
+            <!--Amplitude Cosine 3 -->>
+            <LinearLayout
+                android:id="@+id/ampCos3Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/secondSpace">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_cos_3"/>
+                <EditText
+                    android:id="@+id/amp_cos_3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <!-- Frequency Cosine 3 -->
+            <LinearLayout
+                android:id="@+id/frequencyCos3Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ampCos3Variable">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/frequency_cos_3"/>
+                <EditText
+                    android:id="@+id/freq_cos_3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <!-- Amplitude Sine 3 -->
+            <LinearLayout
+                android:id="@+id/ampSin3Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/frequencyCos3Variable">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_sin_3"/>
+                <EditText
+                    android:id="@+id/amp_sin_3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+
+            <!-- Frequency Sine 3 -->
+            <LinearLayout
+                android:id="@+id/freqSin3Variable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ampSin3Variable">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/amplitude_sin_3"/>
+                <EditText
+                    android:id="@+id/freq_sin_3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/thirdSpace"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/freqSin3Variable">
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/graphSpectrumAnalyzerButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/spectrum_analyzer"
+            android:background="@drawable/grey_button"
+            style="@style/button_text"/>
+        <Button
+            android:id="@+id/graphSpectrogramButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/spectrogram"
+            android:background="@drawable/grey_button"
+            style="@style/button_text"/>
+        <Button
+            android:id="@+id/graphTimeDomainButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/time_domain"
+            android:background="@drawable/grey_button"
+            style="@style/button_text"/>
+    </LinearLayout>
+
+</RelativeLayout>

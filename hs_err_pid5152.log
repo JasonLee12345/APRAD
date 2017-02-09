@@ -1,0 +1,119 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=5152, tid=2096
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_40-b43) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.0-b56 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000028f0800):  JavaThread "Unknown thread" [_thread_in_vm, id=2096, stack(0x00000000027b0000,0x00000000028b0000)]
+
+Stack: [0x00000000027b0000,0x00000000028b0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000028f0800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2096, stack(0x00000000027b0000,0x00000000028b0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.008 loading class 0x0000000002934f40 done
+Event: 0.008 loading class 0x0000000002934960 done
+Event: 0.008 loading class 0x0000000002934940
+Event: 0.008 loading class 0x000000000293ca40
+Event: 0.008 loading class 0x000000000293ca40 done
+Event: 0.008 loading class 0x000000000293ca70
+Event: 0.008 loading class 0x000000000293ca70 done
+Event: 0.008 loading class 0x000000000293caa0
+Event: 0.008 loading class 0x000000000293caa0 done
+Event: 0.008 loading class 0x0000000002934940 done
+
+
+Dynamic libraries:
+0x00007ff7c6e30000 - 0x00007ff7c6e63000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007fffd04d0000 - 0x00007fffd0679000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fffcfb70000 - 0x00007fffcfca9000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007fffcdbb0000 - 0x00007fffcdcbf000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007fffcc3b0000 - 0x00007fffcc43b000 	C:\WINDOWS\system32\apphelp.dll
+0x00007fffc6820000 - 0x00007fffc686f000 	C:\WINDOWS\AppPatch\AppPatch64\AcGenral.DLL
+0x00007fffcf720000 - 0x00007fffcf7c7000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007fffcd700000 - 0x00007fffcd72b000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x00007fffcfcb0000 - 0x00007fffcfd01000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x00007fffd0030000 - 0x00007fffd01a1000 	C:\WINDOWS\system32\USER32.dll
+0x00007fffcf430000 - 0x00007fffcf5a6000 	C:\WINDOWS\system32\ole32.dll
+0x00007fffcdf00000 - 0x00007fffcf30f000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007fffccee0000 - 0x00007fffcceff000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007fffd0210000 - 0x00007fffd02b5000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007fffc03b0000 - 0x00007fffc03cb000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x00007fffcf7d0000 - 0x00007fffcf906000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007fffcfb10000 - 0x00007fffcfb67000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007fffd02f0000 - 0x00007fffd04c7000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x00007fffcf5b0000 - 0x00007fffcf6f5000 	C:\WINDOWS\system32\GDI32.dll
+0x00007fffcd850000 - 0x00007fffcd864000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007fffcc440000 - 0x00007fffcc4e1000 	C:\WINDOWS\SYSTEM32\SHCORE.dll
+0x00007fffcfad0000 - 0x00007fffcfb04000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007fffcfef0000 - 0x00007fffd0028000 	C:\WINDOWS\system32\MSCTF.dll
+0x00007fffcafc0000 - 0x00007fffcb21a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.16384_none_62475f7becb72503\COMCTL32.dll
+0x0000000073bf0000 - 0x0000000073cc1000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x0000000073420000 - 0x0000000073be9000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007fffc4c60000 - 0x00007fffc4c69000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fffcbfe0000 - 0x00007fffcbfff000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fffd02e0000 - 0x00007fffd02e7000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007fffd01b0000 - 0x00007fffd0208000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007fffcbeb0000 - 0x00007fffcbeda000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007fffd02d0000 - 0x00007fffd02d9000 	C:\WINDOWS\system32\NSI.dll
+0x00007fffcdd10000 - 0x00007fffcdd5a000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x00007fffcc6d0000 - 0x00007fffcc6f6000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x0000000073f30000 - 0x0000000073f3f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x00000000733f0000 - 0x0000000073418000 	C:\Program Files\Java\jre7\bin\java.dll
+0x00000000733d0000 - 0x00000000733e5000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\Robbie\android-sdks\platforms\android-16\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 54118 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -test edu.ucdenver.aprad.tests.TestSpectrogramFileIO:testWriteFile
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\EasyPHP-DevServer-13.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseHg\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;.;
+USERNAME=Robbie
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, tsc, tscinvbit
+
+Memory: 4k page, physical 8303732k(4192940k free), swap 9614452k(3475516k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.0-b56) for windows-amd64 JRE (1.7.0_40-b43), built on Aug 26 2013 22:38:32 by "java_re" with unknown MS VC++:1600
+
+time: Sun Mar 02 16:36:20 2014
+elapsed time: 0 seconds
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/galaxy1_1"
+    android:id="@+id/id_mySlideView3" >
+    
+    <TextView
+        android:id="@+id/id_pref_frequencydomain_title"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="@string/preferences"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/id_frequencydomain_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Frequency Domain Setting"
+        android:textColor="#F0B7B7FF" />
+    
+    <View
+		android:layout_width="1dp"
+		android:layout_height="10dp">
+	</View>
+    
+    <TextView
+        android:id="@+id/id_textview_amplify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amplification Coefficient"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+    
+    <SeekBar
+		android:id="@+id/id_frequency_seekbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+    
+    <View
+		android:layout_width="1dp"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+	</View>
+
+	<Button
+		android:id="@+id/savePreferencesFrequencyDomainButton"
+		style="@style/button_text"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:background="@drawable/grey_button"
+		android:text="@string/save" />
+
+</LinearLayout>

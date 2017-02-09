@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/galaxy2_1">
+
+    <ImageView
+        android:id="@+id/wave_image"
+        android:contentDescription="@string/app_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wave" />
+
+    
+    <Button
+        android:id="@+id/id_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/record"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+    
+    <Button
+        android:id="@+id/id_simulate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/simulate"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+    
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/help"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+    
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="About"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+
+</LinearLayout>

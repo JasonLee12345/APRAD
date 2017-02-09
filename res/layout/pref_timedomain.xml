@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy1_1"
+    android:orientation="vertical"
+    android:id="@+id/id_mySlideView2" >
+    
+    <TextView
+        android:id="@+id/id_pref_timedomain_title"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="@string/preferences"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/id_timedomain_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time Domain Setting"
+        android:textColor="#F0B7B7FF" />
+    
+    <View
+		android:layout_width="1dp"
+		android:layout_height="10dp">
+	</View>
+    
+    <TextView
+        android:id="@+id/id_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y-Axis Span (e.g. 1000, default is 4000)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+    
+    <EditText
+        android:id="@+id/input_yaxis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+    
+    <View
+		android:layout_width="1dp"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+	</View>
+    
+    <TextView
+        android:id="@+id/id_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frames Refresh Time (Milliseconds, e.g. 1000, default is 100)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/input_framesrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#ffffff" />
+    
+		<View
+		  android:layout_width="1dp"
+		  android:layout_height="0dp"
+		  android:layout_weight="1">
+		</View>
+		
+		<TextView
+        android:id="@+id/id_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samples(in number)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+		<SeekBar
+		    android:id="@+id/id_seekBar2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" />
+		
+		<View
+		  android:layout_width="1dp"
+		  android:layout_height="0dp"
+		  android:layout_weight="1">
+		</View>
+
+		<Button
+		    android:id="@+id/savePreferencesTimeDomainButton"
+		    style="@style/button_text"
+		    android:layout_width="match_parent"
+		    android:layout_height="80dp"
+		    android:background="@drawable/grey_button"
+		    android:text="@string/save" />
+		
+
+</LinearLayout>
